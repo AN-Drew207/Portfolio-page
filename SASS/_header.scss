@@ -1,0 +1,29 @@
+
+    #header{
+        @include flexContent(row);
+        align-items: center;
+        background-image: linear-gradient(62deg, $primary-color, #c60007);
+        justify-content: right;
+        position: fixed;
+        width: 100vw;
+        nav{
+            ul{
+                @include flexContent(row);
+                align-items: center;
+                list-style: none;
+                padding: 0px 15px;
+                li{
+                    @include flexContent(row);
+                    @include textConfig(20px, 400);
+                    align-items: center;
+                    padding: 10px;
+                    a{
+                        font-size: 30px;
+                        text-decoration: none;
+                        color: $secondary-color;
+                    }
+                }
+                
+            }
+        }
+    }

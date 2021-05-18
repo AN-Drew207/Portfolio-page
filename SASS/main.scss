@@ -1,0 +1,29 @@
+@import 'config';
+
+@mixin flexContent($direccion) {
+    display: flex;
+    flex-direction: $direccion;
+}
+
+@mixin gridContent($columns, $rows) {
+    display: grid;
+    grid-template-columns: repeat($columns,auto);
+    grid-template-rows: repeat($rows,auto);
+}
+
+@mixin textConfig ($font-size, $font-weight) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+body{
+    background-image: linear-gradient(62deg,#000,#222);
+    overflow-x: hidden;
+    @include flexContent(column);
+    @import 'header';
+    @import 'welcome';
+    @import 'about';
+    @import 'projects';
+    @import 'contacts';
+    @import 'mediaquery';
+}

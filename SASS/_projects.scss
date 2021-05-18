@@ -1,0 +1,45 @@
+#projects{
+    @include flexContent(column);
+    align-items: center;
+    padding:94px 0px;
+    h2{
+        font-size: 40px;
+        padding:0px 0px 54px;
+        text-align: center;
+        color: $primary-color;
+    }
+    .container-project-links{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 15px;
+        a{
+            text-decoration: none;
+           .project-card{
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+                border: 1px solid $primary-color;
+                padding: 20px;
+                text-decoration: none;
+                &:hover{
+                    background: $terciary-color;
+                    transition: ease 1s;
+                }
+                .image-project{
+                    height: 40vh;
+                    width: 35vw;
+                    border: 1px solid $primary-color;
+                }
+                h3{
+                    text-decoration: none;
+                    font-size: 30px;
+                    text-align: center;
+                    color: $primary-color;
+                    padding: 15px;
+                }
+            }
+        }
+        
+    }
+}

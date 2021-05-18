@@ -1,0 +1,46 @@
+#contact{
+    @include flexContent(column);
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(62deg, $primary-color, #c60007);
+    padding: 100px 0px;
+    h2{
+        text-align: center;
+        font-size: 40px;
+        color: $secondary-color;
+        padding: 10px;
+    }
+    .social-container{
+        @include gridContent(2,2);
+        align-items: center;
+        justify-content: center;
+        grid-column-gap: 25vw;
+        height: auto;
+        width: 80vw;
+        .social-contact{
+            @include flexContent(row);
+            align-items: center;
+            justify-content: left;
+            .social-link{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                &:hover{
+                    color: #fff;
+                }
+            }
+            .email{
+                @extend .social-link;
+                font-size: 17.5px;
+            }
+            .icon-logo{
+                margin: 10px;
+                height: 30px;
+                width: 30px;
+            }
+        }
+        
+    }
+    
+
+}

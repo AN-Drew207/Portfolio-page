@@ -1,0 +1,37 @@
+@media (max-width:900px) {
+    #header{
+        justify-content: center;
+    }   
+    #welcome{
+        h1{
+            font-size: 30px;
+        }
+    }
+    #projects{
+        h2{
+            font-size: 30px;
+            padding:0px 0px 50px;
+            text-align: center;
+            color: $primary-color;
+        }
+        .container-project-links{
+            grid-template-columns: auto;
+            a{
+                .project-card{
+                    display: grid;
+                    width: 75vw;
+                    .image-project{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+            
+        }
+    }
+    #contact{
+        .social-container{
+            @include gridContent(1,4);
+        }
+    }
+}
