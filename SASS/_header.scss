@@ -11,7 +11,7 @@
                 @include flexContent(row);
                 align-items: center;
                 list-style: none;
-                padding: 0px 15px;
+                padding: 0px 25px;
                 li{
                     @include flexContent(row);
                     @include textConfig(20px, 400);
