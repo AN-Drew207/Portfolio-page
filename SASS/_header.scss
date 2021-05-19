@@ -3,7 +3,7 @@
         @include flexContent(row);
         align-items: center;
         background-image: linear-gradient(62deg, $primary-color, #c60007);
-        justify-content: right;
+        justify-content: flex-end;
         position: fixed;
         width: 100vw;
         nav{

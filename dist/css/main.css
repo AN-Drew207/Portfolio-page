@@ -30,8 +30,8 @@ body #header {
       -ms-flex-align: center;
           align-items: center;
   background-image: linear-gradient(62deg, #a50000, #c60007);
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
+  -webkit-box-pack: flex-end;
+      -ms-flex-pack: flex-end;
           justify-content: flex-end;
   position: fixed;
   width: 100vw;
