@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: linear-gradient(62deg, #000, #222);
+  background-image: linear-gradient(62deg, #222, #333);
   overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,8 +30,8 @@ body #header {
       -ms-flex-align: center;
           align-items: center;
   background-image: linear-gradient(62deg, #a50000, #c60007);
-  -webkit-box-pack: flex-end;
-      -ms-flex-pack: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
           justify-content: flex-end;
   position: fixed;
   width: 100vw;
@@ -103,6 +103,22 @@ body #welcome p {
   color: #000;
 }
 
+body #welcome #project-link {
+  border: 2px solid #000;
+  color: #000;
+  text-decoration: none;
+  font-size: 25px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+body #welcome #project-link:hover {
+  border: 2px solid #a50000;
+  color: #a50000;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
 body #about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,12 +137,12 @@ body #about {
 }
 
 body .border {
-  background-image: linear-gradient(100deg, #a50000 40%, #000);
+  background-image: linear-gradient(100deg, #a50000 40%, #444);
   padding: 3px;
 }
 
 body .border div {
-  background-image: linear-gradient(62deg, #111, #222);
+  background-image: linear-gradient(62deg, #222, #444);
   padding: 1rem;
   z-index: 1;
 }
@@ -295,8 +311,23 @@ body #contact .social-container .social-contact .icon-logo {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  body #header nav ul {
+    padding: 0px 15px;
+  }
+  body #header nav ul li {
+    padding: 10px;
+  }
+  body #header nav ul li a {
+    font-size: 25px;
+    font-weight: 400;
+  }
   body #welcome h1 {
     font-size: 30px;
+  }
+  body #welcome #project-link {
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 8px;
   }
   body #projects h2 {
     font-size: 30px;

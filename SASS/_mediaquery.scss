@@ -1,10 +1,27 @@
 @media (max-width:900px) {
     #header{
         justify-content: center;
+        nav{
+            ul{
+                padding: 0px 15px;
+                li{
+                    padding: 10px;
+                    a{ 
+                        @include textConfig(25px, 400);
+                    }
+                }
+                
+            }
+        }
     }   
     #welcome{
         h1{
             font-size: 30px;
+        }
+        #project-link{
+            font-size: 20px;
+            margin-top: 30px;
+            padding: 8px;
         }
     }
     #projects{
