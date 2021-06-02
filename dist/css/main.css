@@ -137,19 +137,20 @@ body #about {
 }
 
 body .border {
-  background-image: linear-gradient(100deg, #a50000 40%, #444);
+  background-image: linear-gradient(100deg, #a50000 40%, #111);
   padding: 3px;
 }
 
 body .border div {
-  background-image: linear-gradient(62deg, #222, #444);
+  background-image: linear-gradient(62deg, #222, #333);
   padding: 1rem;
   z-index: 1;
 }
 
 body .border div p {
   font-size: 20px;
-  color: #a50000;
+  color: #ff0000;
+  text-shadow: 0.25px 0 0 #000, -0.25px 0 0 #000, 0 0.25px 0 #000, 0 -0.25px 0 #000, 0.125px 0.125px #000, -0.125px -0.125px 0 #000, 0.125px -0.125px 0 #000, -0.125px 0.125px 0 #000;
   width: 75vw;
   text-align: center;
 }
@@ -201,7 +202,6 @@ body #projects .container-project-links a .project-card {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #a50000;
   padding: 20px;
   text-decoration: none;
 }

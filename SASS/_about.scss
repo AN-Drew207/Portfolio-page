@@ -5,15 +5,16 @@
     padding-top: 100px;    
 }
 .border{
-    background-image: linear-gradient(100deg,$primary-color 40% ,#444);
+    background-image: linear-gradient(100deg,$primary-color 40% ,#111);
     padding: 3px;
     div{
-        background-image: linear-gradient(62deg,#222,#444);
+        background-image: linear-gradient(62deg,#222,#333);
         padding: 1rem;
         z-index: 1;
         p{
             font-size: 20px;
-            color: $primary-color;
+            color: #ff0000;
+            text-shadow: 0.25px 0 0 #000, -0.25px 0 0 #000, 0 0.25px 0 #000, 0 -0.25px 0 #000, 0.125px 0.125px #000, -0.125px -0.125px 0 #000, 0.125px -0.125px 0 #000, -0.125px 0.125px 0 #000;
             width: 75vw;
             text-align: center;
         }
